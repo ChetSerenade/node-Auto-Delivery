@@ -6,6 +6,7 @@
 - 我这里是部署到了我自己的服务器中
 - 邮箱接收效果：
 - 数据库的话，可以使用爬虫去爬取一些数据进行填充，或者自己自定义填充。
+- 如果对你有帮助，还请点一个Star 感谢大佬们
 <img src="./static/qq.jpg" alt style="display: block; margin: 0 auto; max-width: 100%;">
 
 ## 步骤
