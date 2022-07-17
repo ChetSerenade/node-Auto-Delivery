@@ -12,7 +12,8 @@ const db = mysql.createPool({
 
 const apiRoute = express.Router();
 apiRoute.get('/historyTime', (req, res) => {
-  let sqlStr = 'select * from t_text_info where status = 0 order by id asc limit 1'
+  //修改Sql语句
+  let sqlStr = 'select * from xxxx  where status = 0 order by id asc limit 1'
   db.query(sqlStr, req.query.id, (err, resultsdata) => {
     if (err) return console.error(err.message)
     console.log(resultsdata
@@ -30,7 +31,8 @@ apiRoute.get('/historyTime', (req, res) => {
         message: "请求成功！",
         result: resultsdata
       })
-      let updateSqlStr = 'update t_text_info set status=1 where id=?'
+       //修改Sql语句
+      let updateSqlStr = 'update xxxx set status=1 where id=?'
       db.query(updateSqlStr, req.query.id, (err, resultsdata) => {
         console.log(resultsdata);
       })
